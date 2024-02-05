@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet alternate" href="dark.css">
+    <style>
+        * {
+            transition: background-color 0.2s ease, color 0.1s ease, border-color 0.2s ease;
+        }
+    </style>
+
+    <link rel="icon" href="fav/favicon.ico">
+    <title>Aks Kanodia</title>
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <div class="nav flex-container">
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+
+        <div class="links">
+            <ul>
+                <li class="link init"><a class="linka" href="#">Home</a></li>
+                <li class="link init"><a class="linka" href="#about-me">About Me</a></li>
+                <li class="link init"><a class="linka" href="#education">Education</a></li>
+                <li class="link init"><a class="linka" href="#achievements">Achievements</a></li>
+                <li class="link init"><a class="linka" href="#skills">Skills</a></li>
+                <li class="link init"><a class="linka" href="#blog">Blog</a></li>
+                <li class="link init"><a href="javascript:swc()"><img id="mode" src="https://s2.svgbox.net/hero-solid.svg?ic=moon&color=000" width="32"></a></li>
+            </ul>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/AksSC" target="_blank">
+                <img src="https://s2.svgbox.net/social.svg?ic=github&color=FFF" id="git" width="32" height="32">
+            </a>
+            <a href="https://instagram.com/kaks_30" target="_blank">
+                <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=FFF" id="insta" width="32" height="32">
+            </a>
+            <a href="mailto:kanodiaaks@gmail.com" target="_blank">
+                <img src="https://s2.svgbox.net/social.svg?ic=gmail&color=FFF" id="email" width="32" height="32">
+            </a>
+        </div>
+
+    </div>
+    <div class="about-me flex-container" id="about-me">
+        <div class="about-me-text">
+            <h2>Hi, I'm Aks!</h2>
+            <p>I'm an 18-year-old freshman at the International Institute of Information Technology, Hyderabad, where I'm embarking on a journey in Computer Science & Engineering. Beyond my academic pursuits, I'm passionate about playing basketball, exploring melodies on the piano, and losing myself in the depths of a good book. Though early in my professional journey, I'm driven by the endless possibilities that technology offers to innovate and shape the future. I eagerly look forward to leveraging my growing knowledge and diverse interests to make a meaningful impact in the tech world!</p>
+        </div>
+        <img src="me.jpeg" alt="Aks" width="20%" />
+    </div>
+    <div class="education" id="education">
+        <div class="edu-text">
+            <h2>Education</h2>
+        </div>
+        <div class="edu-bg-cards flex-container">
+            <div class="edu-text card">
+                <h3>Undergraduate</h3>
+                <p>International Institute of Information Technology, Hyderabad</p>
+                <p>2023 - Present</p>
+                <p>B.Tech in Computer Science and Engineering</p>
+            </div>
+            <div class="edu-text card">
+                <h3>High School</h3>
+                <p>Sahyadri School, Pune</p>
+                <p>2021 - 2023</p>
+                <p>ISC - Science</p>
+            </div>
+            <div class="edu-text card">
+                <h3>School</h3>
+                <p>Sahyadri School, Pune</p>
+                <p>2014 - 2021</p>
+                <p>Fun</p>
+            </div>
+        </div>
+    </div>
+    <div class="achievements" id="achievements">
+        <div class="ach-text">
+            <h2>Achievements</h2>
+        </div>
+        <div class="ach-bg-cards flex-container">
+            <div class="ach-text card">
+                <h3>CS50</h3>
+                <p>Successfully completed Harvard's introductory computer science course spanning a large variety of topics in computer science</p>
+                <a href="CS50.png" class="cs50">Click to view certificate</a>
+            </div>
+            <div class="ach-text card">
+                <h3>JEE mains</h3>
+                <p>Got rank 900 (yes exact) among way too many students</p>
+            </div>
+            <div class="ach-text card">
+                <h3>INSPIRE Scholarship</h3>
+                <p>Innovation in Science Pursuit for Inspired Research (INSPIRE) scholarship was given for performance within top 1% of class XII ISC board exams in 2023</p>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="skill-text">
+            <h2>Skills</h2>
+        </div>
+        <div class="sk-bg-cards flex-container">
+            <div class="skill-text card">
+                <h3>Basketball</h3>
+                <p>Plays decently well (endorsed by Atharv Johar)</p>
+            </div>
+            <div class="skill-text card">
+                <h3>Piano</h3>
+                <p>Been playing for a really long time now</p>
+            </div>
+            <div class="skill-text card">
+                <h3>Programming</h3>
+                <p>Boring skill but yes, kinda good at programming</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog" id="blog">
+        <h2 class="blogs">Blogs</h2>
+        <div class="blog-cont flex-container sk-bg-cards">
+            <a href="blog1.html" target="_blank" class="card blog-link">
+                <h1>Blog 1</h1>
+            </a>
+            <a href="blog2.html" target="_blank" class="card blog-link">
+                <h1>Blog 2</h1>
+            </a>
+        </div>
+    </div>
+
+    <script src="like.js"></script>
+    <script src="theme.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

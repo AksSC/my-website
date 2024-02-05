@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet alternate" href="dark.css">
+    <style>
+        * {
+            transition: background-color 0.2s ease, color 0.1s ease, border-color 0.2s ease;
+        }
+
+        .nav::after {
+            content: '';
+            display: block;
+            flex: 0.125;
+        }
+    </style>
+
+    <link rel="icon" href="fav/favicon.ico">
+    <title>Blog 2</title>
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <div class="nav flex-container">
+        <div class="links show">
+            <ul>
+                <li class="link init"><a class="linka" href="index.html">Home</a></li>
+                <li class="link init"><a href="javascript:swc()"><img id="mode" src="https://s2.svgbox.net/hero-solid.svg?ic=moon&color=000" width="32"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="about-me flex-container" id="about-me">
+        <div class="about-me-text">
+            <h2>Aliquam tristique, massa vitae.</h2>
+            <p>Sed commodo malesuada ullamcorper. Sed eu accumsan dolor. Donec sodales dui sed commodo placerat. Donec et nibh quam. Ut eros lorem, bibendum sed pulvinar nec, facilisis vitae nisi. Nullam magna nisl, gravida ut ligula sit amet, dignissim elementum tellus. Donec laoreet dui at tortor molestie lacinia. Nullam at cursus magna. Praesent non neque cursus, aliquam erat ut, fringilla ipsum. Cras tempus eros non velit blandit pharetra. Quisque auctor volutpat magna, sed hendrerit diam porta quis.
+                <br><br>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam eget sodales leo. Sed blandit feugiat convallis. Phasellus eu lobortis tellus. Donec varius libero tempus lorem iaculis tincidunt. Pellentesque molestie, libero vitae placerat vehicula, turpis tortor convallis ligula, non fringilla ante tortor a nunc. Aliquam vestibulum neque vitae dui consequat pulvinar. Vivamus cursus velit sit amet vulputate dignissim.
+                <br><br>
+                Etiam maximus quam magna, sed congue sem dictum eget. In hac habitasse platea dictumst. Aliquam faucibus odio ut faucibus volutpat. Fusce molestie tempus dolor. Quisque quis nulla tempus, dapibus ex eu, consequat augue. Etiam pulvinar pharetra mattis. Nam dapibus risus at mi pellentesque consequat a id turpis. Proin vel velit in magna venenatis ornare ornare sed sapien. Aliquam in sodales nibh. Nam condimentum consectetur commodo. Aenean dapibus sit amet felis eget imperdiet.
+                <br><br>
+                Mauris ut odio eros. Duis vulputate eu mauris eget malesuada. Duis suscipit orci quam, eget sagittis ipsum feugiat vel. Vestibulum semper dui in neque pulvinar molestie. Fusce tempor sed magna nec auctor. Aenean sagittis dapibus dui ut maximus. Morbi elementum cursus feugiat. In ante orci, elementum id leo id, dictum finibus leo. Donec viverra odio sollicitudin, sollicitudin odio ac, rutrum nisi. Nulla sed ante a nunc bibendum vehicula. Morbi fermentum, urna a molestie aliquet, ex neque ullamcorper sapien, eget consequat turpis turpis nec nunc. Mauris molestie ligula vitae mi pharetra consequat. Curabitur eget lectus vitae ligula pharetra sagittis et ac enim. Pellentesque id sapien ligula. Curabitur gravida bibendum interdum. Vestibulum sit amet quam a elit tempor condimentum in at nunc.</p>
+        </div>
+    </div>
+
+    <div class="like-button-container" id="likeButton">
+        <img src="https://s2.svgbox.net/hero-outline.svg?ic=heart&color=red" width="24" height="24" id="heart">
+        <span id="likeDisp">768</span>
+    </div>
+    <div class="comments-container">
+        <h3>Comments</h3>
+        <div class="comment">
+            <p><strong>Jane Doe:</strong> Amazing article!</p>
+        </div>
+        <div class="comment">
+            <p><strong>Aristotle:</strong> Maecenas ac justo sed purus lobortis aliquam vitae.</p>
+        </div>
+    </div>
+
+    <script src="like2.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

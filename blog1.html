@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet alternate" href="dark.css">
+    <style>
+        * {
+            transition: background-color 0.2s ease, color 0.1s ease, border-color 0.2s ease;
+        }
+
+        .nav::after {
+            content: '';
+            display: block;
+            flex: 0.125;
+        }
+    </style>
+
+    <link rel="icon" href="fav/favicon.ico">
+    <title>Blog 1</title>
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <div class="nav flex-container">
+        <div class="links show">
+            <ul>
+                <li class="link init"><a class="linka" href="index.html">Home</a></li>
+                <li class="link init"><a href="javascript:swc()"><img id="mode" src="https://s2.svgbox.net/hero-solid.svg?ic=moon&color=000" width="32"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="about-me flex-container" id="about-me">
+        <div class="about-me-text">
+            <h2>Donec ut quam.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam bibendum finibus. Donec gravida, velit at hendrerit mattis, dui libero facilisis velit, eu finibus urna enim non eros. Nulla luctus, nulla ac dignissim rutrum, sapien lorem cursus sapien, sed ultricies mauris justo ac sapien. Morbi ultrices ipsum nibh, et feugiat urna tristique nec. Aliquam erat volutpat. Aliquam ipsum nibh, varius sed rhoncus vel, tempus eget nisi. Phasellus in felis non lacus lobortis pharetra. Proin eu hendrerit massa. Aenean tincidunt diam at felis euismod pellentesque.
+                <br><br>
+                Vestibulum sed felis scelerisque, auctor tortor ac, tincidunt tortor. Sed quis mi eu eros accumsan convallis. Pellentesque justo nulla, aliquam blandit malesuada interdum, pellentesque a risus. Vestibulum eu nunc ultrices magna mattis euismod in sed velit. Nulla odio sem, interdum eu odio at, molestie hendrerit arcu. Morbi lorem mauris, lobortis et tempor nec, venenatis ut dolor. Cras sit amet malesuada ante. Nulla id vehicula lorem. Pellentesque ipsum risus, varius et sollicitudin quis, placerat vel odio. Aenean nibh nisl, aliquet ut fermentum non, dapibus eget diam. Sed ut eros id est ultrices varius. Vivamus suscipit risus semper tempus vestibulum. Cras eget tristique diam. Quisque ornare dapibus dui sed mollis. Praesent tristique blandit mauris, sed pretium elit. Etiam suscipit auctor nibh non sollicitudin.
+                <br><br>
+                Nunc pretium lectus velit. Aenean nec justo diam. Nulla condimentum augue eget tellus gravida scelerisque. Quisque a tellus quis elit varius cursus sit amet nec mi. Pellentesque cursus sem a lorem laoreet tincidunt in in dolor. Integer elementum, purus a scelerisque scelerisque, felis felis dignissim mi, a feugiat velit neque a augue. Curabitur blandit volutpat auctor.</p>
+        </div>
+    </div>
+
+    <div class="like-button-container" id="likeButton">
+        <img src="https://s2.svgbox.net/hero-outline.svg?ic=heart&color=red" width="24" height="24" id="heart">
+        <span id="likeDisp">768</span>
+    </div>
+    <div class="comments-container">
+        <h3>Comments</h3>
+        <div class="comment">
+            <p><strong>John Doe:</strong> Great article!</p>
+        </div>
+        <div class="comment">
+            <p><strong>Cicerus:</strong> Fusce et purus tincidunt, luctus mauris eu, laoreet urna. Suspendisse sed lectus.</p>
+        </div>
+    </div>
+
+    <script src="like1.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
